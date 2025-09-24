@@ -8,4 +8,3 @@ def get_db_connection():
         password="vHIZ4gyELvJdH48Qc00YTcEeAElk7wsL",
         port=5432
     )
-    return conn
