@@ -9,7 +9,9 @@ app = FastAPI()
 # ==========================
 origins = [
     "http://localhost:3000",
-    "http://127.0.0.1:3000"
+    "http://127.0.0.1:3000",
+    "http://localhost:5173",
+    "https://proyecto-final-tripulaciones-f-s-bpzh.onrender.com"
 ]
 
 app.add_middleware(
@@ -234,9 +236,9 @@ def kpis():
     return {
         "total_alertas": total_alertas,
         "ultimas_24h": ultimas_24h,
-        "nivel_riesgo": nivel_riesgo,   # 👈 solo texto
+        "nivel_riesgo": nivel_riesgo,   
         "clientes_afectados": clientes_afectados,
-        "tiempo_resolucion": "3h 45m"   # mock fijo por ahora
+        
     }
 
 
